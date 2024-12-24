@@ -1,0 +1,8 @@
+git clone link
+git add 
+git commit -m
+git branch -a
+git push origin branch
+git branch
+git checkout brachname
+git pull origin branch
