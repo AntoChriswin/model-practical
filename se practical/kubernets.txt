@@ -1,0 +1,23 @@
+file name = nginx-deployment.yaml
+
+kubectl version --client
+kubectl cluster-info
+kubectl apply -f nginx-deployment.yaml
+kubectl get pods
+kubectl expose deployment nginx-deployment --type=NodePort --name=nginx-service
+kubectl get svc
+Open a browser and go to:
+http://localhost:<NodePort>
+
+5. Manage the Cluster
+• Scale the Deployment:
+bash
+kubectl scale deployment nginx-deployment --replicas=4
+Verify the scaling:
+bash
+kubectl get pods
+Delete Resources:
+• To clean up:
+Bash
+kubectl delete svc nginx-service
+kubectl delete deployment nginx-deployment
