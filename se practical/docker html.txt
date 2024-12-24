@@ -1,0 +1,3 @@
+docker build -t simple-static-website .      (simple-static-website = name)
+docker run -itd -p 80:80 --name simple-static-website simple-static-website
+docker ps
